@@ -1,0 +1,411 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "source": [
+        "INVESTIGACION DE 30 FUNCIONES BASICAS DE PYTON\n",
+        "\n",
+        "Asignatura: Introduccion a la ciencia de datos\n",
+        "\n",
+        "Docente: Carlos Gomez\n",
+        "\n",
+        "Integrantes: Sergio Alejandro Botia, Dilan Osorio, Alejandro Botia"
+      ],
+      "metadata": {
+        "id": "Fo_iz-UqrdNm"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "1) input()\n",
+        "La función input() permite que el usuario escriba algo con el teclado y el programa lo guarde dentro de una variable.\n",
+        "\n",
+        "Ejemplo: Preguntar el color favorito del usuario."
+      ],
+      "metadata": {
+        "id": "vE0S27hcx5rt"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Simulamos la escritura del usuario como \"Azul\"\n",
+        "Color = \"Azul\"\n",
+        "print(\"¿Cuál es tu color favorito?:\", Color)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ACr-CPuPx-2V",
+        "outputId": "e460dbec-ea82-47cf-9b26-44701937ff70"
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "¿Cuál es tu color favorito?: Azul\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "2) sum()\n",
+        "La función sum() suma todos los números que están guardados dentro de una lista.\n",
+        "\n",
+        "Ejemplo: Sumar los puntos obtenidos en tres juegos."
+      ],
+      "metadata": {
+        "id": "Wp25zUvAyQpt"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "Puntos = [5, 10, 15]\n",
+        "total = sum(Puntos)\n",
+        "\n",
+        "print(\"La suma de puntos es:\", total)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "SqCe5kMdyXL1",
+        "outputId": "9dcf020a-13de-46ee-819d-96457adea620"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "La suma de puntos es: 30\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "3) min()\n",
+        "La función min() hace lo contrario a max: busca y nos devuelve el número más pequeño de un grupo.\n",
+        "\n",
+        "Ejemplo: Encontrar la temperatura más baja del día."
+      ],
+      "metadata": {
+        "id": "eemjwC3HyiJG"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "Temperaturas = [18, 15, 22, 12]\n",
+        "temp_minima = min(Temperaturas)\n",
+        "\n",
+        "print(\"La temperatura más baja es:\", temp_minima)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "fA_M5AL9ylNc",
+        "outputId": "e7b9e28c-168b-430d-e3e0-4146c4d98d0a"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "La temperatura más baja es: 12\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "4) range()\n",
+        "La función range() crea una lista de números en orden, que normalmente usamos para que un ciclo se repita varias veces.\n",
+        "\n",
+        "Ejemplo: Generar números para contar del 0 al 3."
+      ],
+      "metadata": {
+        "id": "Bw6kGLcRynQ-"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "numeros = list(range(4))\n",
+        "\n",
+        "print(\"La lista de números es:\", numeros)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "QEXlYNmxypje",
+        "outputId": "b78b8075-d045-4edf-8c17-3413ee0bdc4c"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "La lista de números es: [0, 1, 2, 3]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "5) list()\n",
+        "La función list() convierte un grupo de elementos (como letras o palabras) en una lista oficial de Python.\n",
+        "\n",
+        "Ejemplo: Separar las letras de una palabra en elementos individuales."
+      ],
+      "metadata": {
+        "id": "3MksppxFysI9"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "Palabra = \"Sol\"\n",
+        "lista_letras = list(Palabra)\n",
+        "\n",
+        "print(\"Letras separadas:\", lista_letras)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "viInthaoyvGV",
+        "outputId": "1b36d0e7-8b31-49c4-f397-2ff27137f08d"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Letras separadas: ['S', 'o', 'l']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "6) sorted()\n",
+        "La función sorted() toma una lista desordenada y nos la devuelve perfectamente ordenada de menor a mayor (o en orden alfabético).\n",
+        "\n",
+        "Ejemplo: Ordenar los juguetes favoritos por su tamaño numérico."
+      ],
+      "metadata": {
+        "id": "DH2HCs-Xyx8F"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "Juguetes = [5, 1, 3]\n",
+        "ordenados = sorted(Juguetes)\n",
+        "\n",
+        "print(\"Juguetes ordenados:\", ordenados)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "MKphdeQ_y05V",
+        "outputId": "cb16e867-5094-4e71-f31b-2b10c988de3f"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Juguetes ordenados: [1, 3, 5]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "7) upper()\n",
+        "La función upper() toma un texto en minúsculas y lo convierte completamente a letras MAYÚSCULAS.\n",
+        "\n",
+        "Ejemplo: Hacer que un grito suene más fuerte en texto."
+      ],
+      "metadata": {
+        "id": "GVzp4fVPy3SG"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "Palabra = \"cuidado\"\n",
+        "grito = Palabra.upper()\n",
+        "\n",
+        "print(\"Texto en mayúsculas:\", grito)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ucm18NCTy63G",
+        "outputId": "adb898c0-f100-4b3d-b343-7aee7363d4cd"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Texto en mayúsculas: CUIDADO\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "8) lower()\n",
+        "La función lower() es lo contrario de upper: toma un texto en mayúsculas y lo convierte en letras minúsculas.\n",
+        "\n",
+        "Ejemplo: Escribir un correo electrónico todo en minúsculas."
+      ],
+      "metadata": {
+        "id": "MsWBZbt3y9NV"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "Correo = \"CONTACTO@EMAIL.COM\"\n",
+        "correo_limpio = Correo.lower()\n",
+        "\n",
+        "print(\"Correo en minúsculas:\", correo_limpio)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "U6hUdRj2zCGl",
+        "outputId": "b810b0f8-8ffa-43b6-c01b-d0f9ade842ce"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Correo en minúsculas: contacto@email.com\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "9) title()\n",
+        "La función title() convierte la primera letra de cada palabra de un texto en mayúscula, ideal para nombres propios.\n",
+        "\n",
+        "Ejemplo: Corregir un nombre mal escrito."
+      ],
+      "metadata": {
+        "id": "-su3SQt3zENG"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "Nombre = \"juan perez\"\n",
+        "nombre_bonito = Nombre.title()\n",
+        "\n",
+        "print(\"Nombre corregido:\", nombre_bonito)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "xt0sPXoOzGdV",
+        "outputId": "a3416171-9a99-4b49-a905-abb45ded5f40"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Nombre corregido: Juan Perez\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "10) chr()\n",
+        "La función chr() recibe un número de código de la computadora y nos da el carácter o letra que representa ese número.\n",
+        "\n",
+        "Ejemplo: Descubrir qué letra es el código 65."
+      ],
+      "metadata": {
+        "id": "_ehA_KoZzIld"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "Codigo = 65\n",
+        "Letra = chr(Codigo)\n",
+        "\n",
+        "print(\"La letra secreta es:\", Letra)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Yirm8nY8zLFd",
+        "outputId": "25c7b50c-1311-4437-c53b-78b6d02c65e2"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "La letra secreta es: A\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
