@@ -1,2 +1,2 @@
 # INVESTIGACION-DE-30-FUNCIONES-BASICAS-DE-PYTHON
-Investigación sobre 30 funciones de python, ya que python es un lenguaje de programación utilizado por su facilidad de aprendizaje y su capacidad para desarrollar diferentes tipos de programas.
+Python es un lenguaje de programación ampliamente utilizado gracias a su facilidad de aprendizaje, versatilidad y capacidad para desarrollar diferentes tipos de aplicaciones y programas. En esta investigación se presentan 30 funciones de Python, explicando su utilidad y aplicación, con el propósito de conocer sus principales características y comprender cómo estas herramientas permiten realizar operaciones, procesar información y desarrollar soluciones de manera sencilla y eficiente.
